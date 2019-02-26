@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+ <head>
+   <title>Canvas Image Practices</title>
+   <style>
+     #myCanvas{
+       border:1px solid red;
+     }
+     #imgHolder{
+       display:none;
+       background-color:green;
+     }
+
+     .scoreBoard{
+        width:20rem;
+        height:1.5rem;
+        font-size:1.5rem;
+        float:right;
+        border:1px solid red;
+        background-color:#000000;
+        color:#16BA08;
+     }
+     .scoreBoard .theTimer{
+
+     }
+
+     .scoreBoard .theScore{
+
+     }
+
+    
+
+   </style>
+   
+ </head>
+ <body>
+   <div id="imgHolder">
+     <img src="helicopter.png" id="imgHelicopter"/>
+     <img src="mountain.png" id="imgMountain"/>
+     <img src="cat_1.png" id="imgCat"/>
+     
+   </div>
+   
+   <div id="scoreBoard" class="scoreBoard">
+      <span id="theTimer" class="theTimer"></span>
+      <span id="theScore" class="theScore"></span>
+   </div>
+   <canvas id='myCanvas' width="500" height="500">
+      
+   </canvas>
+
+   <h2 id='xyPos'>x: 0 | y: 0</h2>
+   
+   <script src="helicopter_game.js" ></script>
+ </body>
+</html>
